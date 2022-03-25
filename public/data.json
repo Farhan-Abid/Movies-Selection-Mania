@@ -1,0 +1,56 @@
+[
+    {
+      "id": "623e2bed6b50af6775eddc8b",
+      "picture": "./images/deadpool.jpg",
+      "price": 557,
+      "name": "Deadpool"
+    },
+    {
+      "id": "623e2bed3943fca5cea424cd",
+      "picture": "./images/forrest-gump.jpg",
+      "price": 268,
+      "name": "Forrest Gump"
+    },
+    {
+      "id": "623e2beddc7bbcb0eed2285e",
+      "picture": "./images/ghostbusters.jpg",
+      "price": 535,
+      "name": "Ghostbusters"
+    },
+    {
+      "id": "623e2bedf50200b82792d0f8",
+      "picture": "./images/hacksaw-ridge.jpg",
+      "price": 316,
+      "name": "Hacksaw Ridge"
+    },
+    {
+      "id": "623e2bedf8cda5a97b11479e",
+      "picture": "./images/jumanji.jpg",
+      "price": 759,
+      "name": "Jumanji"
+    },
+    {
+      "id": "623e2bed06113702f0bdceaa",
+      "picture": "./images/jurrasic-park.jpg",
+      "price": 704,
+      "name": "Jurrasic Park"
+    },
+    {
+      "id": "623e2bedeb0f28bdeb6e6672",
+      "picture": "./images/saving-private-ryan.jpg",
+      "price": 224,
+      "name": "Saving Private Ryan"
+    },
+    {
+      "id": "623e2bed6567d8a6a57aa244",
+      "picture": "./images/the-hunger-games.jpg",
+      "price": 742,
+      "name": "The Hunger Games"
+    },
+    {
+      "id": "623e2beddbd974814b1e263b",
+      "picture": "./images/the-maze-runner.jpg",
+      "price": 225,
+      "name": "The Maze Runner"
+    }
+  ]
