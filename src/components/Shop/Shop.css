@@ -1,14 +1,28 @@
-.shop-container{
+ .shop-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
-}
+} 
 
-.movies-container{
+ .movies-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 45px;
-}
+} 
 
 .cart-container{
     background-color: rgb(174, 231, 212);
+    position: sticky;
+    top: 0
 }
+
+@media screen and (max-width:1100px) {
+    .movies-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .movies-container {
+      grid-template-columns: 1fr;
+    }
+  }

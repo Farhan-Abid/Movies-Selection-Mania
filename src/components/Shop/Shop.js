@@ -6,6 +6,9 @@ import './Shop.css';
 const Shop = () => {
     const [movies,setMovies] = useState([]);
     const [cart,setCart] = useState([]);
+
+    console.log(cart);
+    
     useEffect( () => {
         fetch('data.json')
   .then(response => response.json())
@@ -18,6 +21,14 @@ const Shop = () => {
         const newCart = [...cart,movie];
         setCart(newCart);
       };
+    const chooseButton = (cartItems) =>{
+        const randomNum = Math.floor(Math.random() * 4);
+        if(cartItems[randomNum]){
+            alert(cartItems[randomNum].name);
+        }
+        
+
+    };
     return (
         <div className='shop-container'>
             <div className="movies-container">
@@ -30,9 +41,20 @@ const Shop = () => {
 
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart></Cart>
+            {
+                    cart.map((item) =>(
+                        <h1>{item.name}</h1>
+                    ) )
+                }
+                <button onClick={() => chooseButton(cart)} type="button" class="btn btn-outline-danger">Choose One for me</button>
+                <br />
+                <button type="button" class="btn btn-outline-warning">Choose Again</button>
+
+                {/* <Cart cart={cart}></Cart> */}
             </div>
         </div>
+        
     );
 };
 
