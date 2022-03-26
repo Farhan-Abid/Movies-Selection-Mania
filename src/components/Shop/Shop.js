@@ -10,12 +10,16 @@ const Shop = () => {
   .then(data => setMovies(data))
 
     },[]);
+
+    const handleAddToCart = movie => {
+        console.log(movie);
+      };
     return (
         <div className='shop-container'>
             <div className="movies-container">
                 {
                     movies.map(movie => <Movie key={movie.id}
-                    movie={movie}>
+                    movie={movie} handleAddToCart={handleAddToCart}>
 
                     </Movie>)
                 }
