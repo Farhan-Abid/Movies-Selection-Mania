@@ -7,7 +7,7 @@ import QuestionOne from './components/QuestionOne/QuestionOne';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-light">
       <Navbar></Navbar>
       <h1 className='mt-3 movie-text-color mb-3'>MOVIES SELECTION MANIA</h1>
       <Shop></Shop>

@@ -21,6 +21,7 @@ const Shop = () => {
         const newCart = [...cart,movie];
         setCart(newCart);
       };
+    
     const chooseButton = (cartItems) =>{
         const randomNum = Math.floor(Math.random() * 4);
         if(cartItems[randomNum]){
@@ -28,6 +29,9 @@ const Shop = () => {
         }
         
 
+    };
+    const vanishAll = () => {
+        setCart([]);
     };
     return (
         <div className='shop-container'>
@@ -42,6 +46,7 @@ const Shop = () => {
             </div>
             <div className="cart-container">
                 <Cart></Cart>
+                <br />
             {
                     cart.map((item) =>(
                         <h1>{item.name}</h1>
@@ -49,9 +54,10 @@ const Shop = () => {
                 }
                 <button onClick={() => chooseButton(cart)} type="button" class="btn btn-outline-danger">Choose One for me</button>
                 <br />
-                <button type="button" class="btn btn-outline-warning">Choose Again</button>
+                
+                <br />
+                <button onClick={vanishAll} type="button" class="btn btn-outline-warning">Choose Again</button>
 
-                {/* <Cart cart={cart}></Cart> */}
             </div>
         </div>
         
