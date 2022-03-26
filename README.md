@@ -2,9 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Live Site link
 
-In the project directory, you can run:
+[https://eloquent-kringle-6e4c83.netlify.app/]
+
 
 ### `npm start`
 
